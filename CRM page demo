@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Calibri, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #789dab;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #518091;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name *</label>
+    <input type="text" id="fname" name="firstname" placeholder="your first name..">
+
+    <label for="lname">Last Name *</label>
+    <input type="text" id="lname" name="lastname" placeholder="your last name..">
+    
+    <label for="Tel">Phone number *</label>
+    <input type="text" id="phone" name="Phone number">
+    
+    <label for="E-mail">E-mail *</label>
+    <input type="text" id="E-mail" name="E-mail">
+
+    <label for="Industry (Company) category">Industry (Company) category</label>
+    <select id="Industry (Company) category" name="Industry (Company) category">
+      <option value="Select">- Please Select -</option>
+      <option value="Medical">Medical</option>
+      <option value="Aerospace">Aerospace</option>
+      <option value="Transportation">Transportation</option>
+      <option value="Oil and Gas">Oil and Gas</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Marine">Marine</option>
+      <option value="Military and Defense">Military and Defense</option>
+      <option value="Other">Other</option>
+    </select>
+    
+    <label for="Purpose of consultation">Purpose of consultation</label>
+    <select id="Purpose of consultation" name="Purpose of consultation">
+      <option value="Select">- Please Select -</option>
+      <option value="General enquiries">General enquiries</option>
+      <option value="Purchase new machine">Purchase new machine</option>
+      <option value="Service support (installation, repair, maintenance, training, etc.)">Service support (installation, repair, maintenance, training, etc.)</option>
+      <option value="Other">Other</option>
+    </select>
+
+<label for="Product (or Service) focus">Product (or Service) focus</label>
+    <input type="text" id="Product (or Service) focus" name="Product (or Service) focus" placeholder="please share which parts of the product or service you care about？">
+    
+    <label for="Your Message">Your Message</label>
+    <textarea id="Your Message" name="Your Message" placeholder="Details of requirements" style="height:150px"></textarea>
+
+    <input type="submit" value="Submit">
+    
+  </form>
+</div>
+
+</body>
+</html>
